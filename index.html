@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин цифровой техники</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="root">
+    
+    <div class="page">
+
+        <header class="header">
+            <a href="#" class="burger-link"><img src="images/navigation.png" class="burger" alt="Меню" title="Меню"></a>
+            <img src="images/logo.png" alt="Логотип" title="Логотип" class="logo">
+            <a href="#" class="magnifier__link"><img src="images/magnifier.png" class="magnifier" alt="Поиск" title="Поиск"></a>
+
+            <a href="tel:88007775050" class="phone">8 800 777 50 50</a>
+
+            <search class="search">
+                <form action="get" class="search-form">
+                    <input type="search" class="search-form__input" placeholder="Поиск товаров">
+                    <img src="images/magnifier.png" class="search-form__magnifier" alt="magnifier" title="magnifier">
+                </form>
+            </search>
+
+            <img src="images/cart.svg" class="mobile-cart__image" alt="Корзина" title="Корзина" >
+
+            <a href="#" class="delivery">Доставка и оплата</a>
+        </header>
+
+
+        <main class="main">
+            <div class="panel">
+                <nav id="menu">
+                    <ul class="list">
+                        <li class="list__item"><a href="#" class="item__link">Мобильные телефоны</a></li>
+                        <li class="list__item"><a href="#" class="item__link">Планшеты</a></li>
+                        <li class="list__item"><a href="#" class="item__link">Фототехника</a></li>
+                        <li class="list__item"><a href="#" class="item__link">Ноутбуки</a></li>
+                        <li class="list__item"><a href="#" class="item__link">Телевизоры</a></li>
+                    </ul>
+                </nav>
+
+                <a href="#" class="cart">
+                        <img src="images/cart.svg" class="cart__image" alt="Корзина" title="Корзина" >
+                        <img src="images/hover-cart.svg" class="hidden" alt="Корзина" title="Корзина" >
+                    <p class="cart__text">Корзина</p>
+                </a>
+            </div>
+
+            <div class="container">
+                <div class="filter">
+                    <button type="button" class="close-btn"></button>
+                    <select class="filter__item">
+                        <option value="">Любого логотипа</option>
+                        <option value="Компакт-камера">Компакт-камера</option>
+                        <option value="Беззеркальная">Беззеркальная</option>
+                        <option value="Зеркальная">Зеркальная</option>
+                        <option value="Среднеформатная">Среднеформатная</option>
+                    </select>
+    
+                    <select class="filter__item">
+                        <option value="">Любого бренда</option>
+                        <option value="Компакт-камера">Canon</option>
+                        <option value="Беззеркальная">Nicon</option>
+                        <option value="Зеркальная">Sony</option>
+                        <option value="Среднеформатная">Fujifilm</option>
+                        <option value="Зеркальная">Samsung</option>
+                        <option value="Зеркальная">Olympus</option>
+                    </select>
+    
+                    <div class="filter__price">
+                        <span>По цене</span>
+                        <input type="text" value="от    "  maxlength="16">
+                        <input type="text" value="до    " maxlength="16">
+                        <span>рублей</span>
+                    </div>
+                    <button class="use-btn">Применить</button>
+                </div>
+            </div>
+            
+            <div class="mobile-panel">
+                <span class="mobile-panel__title">Фототехника</span>
+                <a href="#" class="sort-link"><img src="images/sorting.png" class="sort" alt="Поиск по парамемтрам" title="Поиск по парамемтрам"></a>
+            </div>
+
+            <ul class="products">
+                <li class="product-hit">
+                    <img src="images/hit-product.png" class="product-hit__img" alt="Товар на скидке" title="Товар на скидке">
+                    <div class="product-hit__info">
+                        <p class="product-hit__title">Canon EOS 5D Mark III Body</p>
+                        <p class="product-hit__text">Полнокадровая цифровая зеркальная камера, предназначенная для опытных любителей 
+                            профессиональных фотографов и видеооператоров. Преемник успешной модели EOS 5D Mark II. Фотоаппарат имеет 22.3 Мп. 
+                            CMOS-сенсор размером 36х24 мм, 14-битный процессор DIGIC 5+, 61-точечный автофокус.</p>
+                        <span class="old-price">4 400,00 руб.</span>
+                        <div class="price-info hit-border">
+                            <p class="product__price hit">3 200,00 руб.</p>
+                            <img src="images/red-cart.svg" class="red-cart" alt="Корзина" title="Корзина">   
+                        </div>
+                    </div> 
+                </li>
+            </ul>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
